@@ -1,0 +1,44 @@
+*{box-sizing:border-box}
+body{background-color: hsl(0, 0%, 98%);font-family: Poppins;}
+body>p,body>h1{text-align: center;}
+body>p{width:500px;margin:auto}
+#first{
+    color:rgb(145, 143, 143);
+    opacity:0.9;
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom:0
+}
+#second,h2{margin-top:0}
+p{color:rgb(145, 143, 143);opacity:0.7;font-size: 15px;}
+div{
+    width:350px;
+    height:280px ;
+    border-radius: 8px;
+    box-shadow:  18px 18px 18px #dad3d3,
+                -18px 18px 18px #fffdfd;
+    border-top: 5px solid;
+    padding:20px;
+}
+main{display:flex;justify-content: space-between;margin:50px 100px}
+#cyan,#blue{margin-top:140px}
+#yellow{margin-top:30px;border-color:hsl(34, 97%, 64%)}
+#cyan{border-color:hsl(180, 62%, 55%)}
+#blue{border-color:hsl(212, 86%, 64%)}
+#red{border-color:hsl(0, 78%, 62%)}
+main div img{float:right;margin-top:40px}
+
+/*Mobile*/
+@media (max-width:769px) {
+    body>p{width:80%;margin:auto;}
+    #cyan,#blue,#yellow,#red{margin:40px auto 0;width:90%}
+    main{display:flex;flex-direction:column;justify-content: space-between;margin:50px auto}
+}
+
+
+.attribution { font-size: 13px; text-align: center;color: black;opacity:1 }
+.attribution a { color: hsl(228, 45%, 44%); }
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins-Regular.ttf);
+}
